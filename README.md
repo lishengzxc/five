@@ -45,10 +45,17 @@ five.upHigh() // ⁵
 five.downLow() // ₅
 five.tooSlow() // 5, with a ~500 millisecond delay
 five.roman() // V
-five.morseCode() // di-di-di-di-dit
+five.roman('upper') // V
+five.roman('lower') // v
+five.morseCode() // di-di-di-di-dah
 five.negative() // -5
 five.loud() // FIVE
+five.loud('piglatin') // IVEFAY
 five.smooth() // S
+five.num() // 5 ps: It is String.
+five.num('format0') // ⑤
+five.num('format1') // ㈤
+five.num('format2') // ⒌
 ```
 
 ##### 5 goes multilingual
@@ -56,10 +63,15 @@ five.smooth() // S
 five.arabic() // خمسة
 five.azerbaijani() // beş
 five.basque() // bost
+five.belarusian // пяць
 five.bosnian() // pet
 five.bulgarian() // пет
 five.catalan() // cinc
 five.chinese() // 五
+five.chinese('pinyin') // wǔ
+five.chinese('financial') // 伍
+five.chinese('simplified') // 五
+five.chinese('traditional') // 伍
 five.choctaw() // tahlapi
 five.croatian() // pet
 five.czech() // pět
@@ -67,11 +79,14 @@ five.dovah() // hen
 five.dutch() // vijf
 five.elvish() // lempe
 five.english() // Five
+five.estonian() // viis
 five.finnish() // viisi
 five.french() // cinq
 five.german() // fünf
+five.greek() // πέντε
 five.hebrew() // חמש
 five.hindi() // पांच
+five.hungarian() // öt
 five.indonesian() // lima
 five.irish() // cúig
 five.italian() // cinque
@@ -80,24 +95,32 @@ five.kannada() // ಐದು
 five.klingon() // vagh
 five.korean() // 오
 five.latin() // quinque
+five.latvian() // pieci
+five.lithuanian() // penki
 five.mongolian() // таван
+five.norwegian() // fem
 five.persian() // پنج
 five.piglatin() // ivefay
 five.polish() // pięć
 five.portuguese() // cinco
 five.romanian() // cinci
 five.russian() // пять
+five.serbian() // pet
+five.slovakian() // päť
 five.slovenian() // pet
 five.spanish() // cinco
 five.swedish() // fem
 five.tamil() // ஐந்து
 five.telugu() // ఐదు
 five.thai() // ห้า
+five.turkish() // beş
 five.ukrainian() // п’ять
+five.welsh() // pump
 ```
 
 ##### Different radices
 ```javascript
+fiev.five.morseCode(); // ....-
 five.binary(); // 101
 five.octal(); // 5
 five.hex(); // 5
@@ -112,6 +135,7 @@ five.reduce([1, 2, 3]); // 5
 ##### Novelty
 ```javascript
 five.fab(); // ['Juwan Howard','Ray Jackson','Jimmy King','Jalen Rose','Chris Webber']
+five.jackson(); // ['Jackie','Tito','Jermaine','Marlon','Michael']
 ```
 
 ##### Rotation
@@ -119,6 +143,12 @@ five.fab(); // ['Juwan Howard','Ray Jackson','Jimmy King','Jalen Rose','Chris We
 five.rot("five.js"); //"knaj.ox"
 ```
 
+##### Asynchronous Usage
+```javascript
+five.async(function(err, five) {
+	// five === 5
+});
+```
 
 ### Development
 ##### The code
